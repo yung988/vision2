@@ -28,10 +28,10 @@ importers:
         specifier: ^0.6.24
         version: 0.6.24(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@studio-freight/react-lenis':
-        specifier: 0.0.40
-        version: 0.0.40(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^0.0.38
+        version: 0.0.38(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@studio-freight/tempus':
-        specifier: 0.0.38
+        specifier: ^0.0.38
         version: 0.0.38
       '@theatre/core':
         specifier: ^0.7.0
@@ -121,12 +121,18 @@ importers:
       '@svgr/webpack':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.3.3)
+      contentful-management:
+        specifier: ^11.48.0
+        version: 11.48.0
       critters:
         specifier: ^0.0.20
         version: 0.0.20
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.4.7
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -1472,20 +1478,16 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@studio-freight/lenis@1.0.33':
-    resolution: {integrity: sha512-Pfoimwwsf8oVuneQg3KoigUDlo1S+rE+m2Tz7b+zMNAEi0UAhox+PG/ksLHa8ktQhlsuWODeQFCl8VHBxqOtfw==}
-    deprecated: 'The ''@studio-freight/lenis'' package has been renamed to ''lenis''. Please update your dependencies: npm install lenis and visit the documentation: https://www.npmjs.com/package/lenis'
-
   '@studio-freight/lenis@1.0.42':
     resolution: {integrity: sha512-HJAGf2DeM+BTvKzHv752z6Z7zy6bA643nZM7W88Ft9tnw2GsJSp6iJ+3cekjyMIWH+cloL2U9X82dKXgdU8kPg==}
     deprecated: 'The ''@studio-freight/lenis'' package has been renamed to ''lenis''. Please update your dependencies: npm install lenis and visit the documentation: https://www.npmjs.com/package/lenis'
 
-  '@studio-freight/react-lenis@0.0.40':
-    resolution: {integrity: sha512-LxPK3DtkTZkpnp9AUnNMD6hd5JMI24ZccEogF42s3DJ8vYE9LI7OxEkoWNwa1Um+M0qTHUSEIlIkEySEzF8JIw==}
+  '@studio-freight/react-lenis@0.0.38':
+    resolution: {integrity: sha512-Jyc4d/RfP9WFliQc01eT7V+L0hD+JoYvalyu2MAa0X/p47fYFiwKmT6N5szZArvrJIGOYj5G8rvDYeaD/vz6IA==}
     deprecated: 'The ''@studio-freight/react-lenis'' package has been renamed to ''lenis''. Please update your dependencies: npm install lenis and visit the documentation: https://www.npmjs.com/package/lenis'
     peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@studio-freight/react-lenis@0.0.47':
     resolution: {integrity: sha512-h+IAqiyiNo8mRo/CA3/sHCqX2IV0tTLyzZRWsdRaLPtM2aBaRqK0+ISYWTUmktQfcf3qvp4hsn0Oeyt9uXwLTQ==}
@@ -2270,6 +2272,10 @@ packages:
 
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
+
+  dotenv@16.4.7:
+    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+    engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -6094,14 +6100,12 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@studio-freight/lenis@1.0.33': {}
-
   '@studio-freight/lenis@1.0.42': {}
 
-  '@studio-freight/react-lenis@0.0.40(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@studio-freight/react-lenis@0.0.38(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@studio-freight/hamo': 0.6.24(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@studio-freight/lenis': 1.0.33
+      '@studio-freight/hamo': 0.6.33(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@studio-freight/lenis': 1.0.42
       clsx: 2.1.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -6983,6 +6987,8 @@ snapshots:
       no-case: 3.0.4
       tslib: 2.6.2
 
+  dotenv@16.4.7: {}
+
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.2
@@ -7696,7 +7702,7 @@ snapshots:
 
   has-tostringtag@1.0.2:
     dependencies:
-      has-symbols: 1.0.3
+      has-symbols: 1.1.0
 
   hasown@2.0.0:
     dependencies:
