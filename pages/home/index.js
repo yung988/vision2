@@ -217,7 +217,7 @@ export default function Home({ studioVision, footer, contact, projects }) {
                               priority={i === 0}
                               width={1026}
                               height={604}
-                              objectFit="contain"
+                              objectFit="cover"
                             />
                           ) : (
                             <div className={s.noImage}>

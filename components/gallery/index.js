@@ -69,7 +69,7 @@ export function Gallery() {
                   width={1557}
                   height={916.5}
                   large
-                  objectFit="contain"
+                  objectFit="cover"
                 />
               </div>
             ))

@@ -9,7 +9,7 @@ export function ComposableImage({
   large = false,
   small = false,
   priority = false,
-  objectFit = 'contain',
+  objectFit = 'cover',
 }) {
   const amount = sources.items.length
   return (
@@ -47,10 +47,13 @@ export function ComposableImage({
               '--width': width / amount,
               objectFit: objectFit,
               backgroundColor: '#000',
+              maxHeight: '100%',
+              maxWidth: '100%',
             }}
             priority={priority}
             quality={95}
             sizes="(max-width: 768px) 100vw, 75vw"
+            fill={false}
           />
         ),
       )}
