@@ -24,9 +24,9 @@ function normalizeText(text) {
     .trim()
 }
 
-async function uploadProjectImages() {
+async function cleanAndUploadImages() {
   try {
-    console.log('Starting to upload project images from public/images/')
+    console.log('Starting to clean and upload project images')
 
     // Get the space and environment
     const space = await client.getSpace(SPACE_ID)
@@ -81,7 +81,7 @@ async function uploadProjectImages() {
 
       // Find the project by normalized name
       const normalizedProjectName = normalizeText(projectName)
-      const project = projectMap[normalizedProjectName]
+      let project = projectMap[normalizedProjectName]
 
       if (!project) {
         console.log(
@@ -98,7 +98,68 @@ async function uploadProjectImages() {
         `Found project with ID: ${project.sys.id}, Name: ${project.fields.name['en-US']}`,
       )
 
-      // Upload images for this project
+      // Step 1: Clean existing assets
+      if (
+        project.fields.assetsCollection &&
+        project.fields.assetsCollection['en-US']
+      ) {
+        console.log('Cleaning existing assets...')
+
+        // Get all asset entries linked to this project
+        const assetEntryLinks = project.fields.assetsCollection['en-US']
+
+        for (const link of assetEntryLinks) {
+          try {
+            // Get the asset entry
+            const assetEntry = await environment.getEntry(link.sys.id)
+
+            // Get all assets linked to this asset entry
+            if (
+              assetEntry.fields.imagesCollection &&
+              assetEntry.fields.imagesCollection['en-US']
+            ) {
+              const assetLinks = assetEntry.fields.imagesCollection['en-US']
+
+              // Unpublish and delete each asset
+              for (const assetLink of assetLinks) {
+                try {
+                  const asset = await environment.getAsset(assetLink.sys.id)
+                  if (asset.isPublished()) {
+                    await asset.unpublish()
+                  }
+                  await asset.delete()
+                  console.log(`Deleted asset: ${assetLink.sys.id}`)
+                } catch (error) {
+                  console.error(
+                    `Error deleting asset ${assetLink.sys.id}:`,
+                    error.message,
+                  )
+                }
+              }
+            }
+
+            // Unpublish and delete the asset entry
+            if (assetEntry.isPublished()) {
+              await assetEntry.unpublish()
+            }
+            await assetEntry.delete()
+            console.log(`Deleted asset entry: ${link.sys.id}`)
+          } catch (error) {
+            console.error(
+              `Error deleting asset entry ${link.sys.id}:`,
+              error.message,
+            )
+          }
+        }
+
+        // Clear the assetsCollection field
+        project.fields.assetsCollection = { 'en-US': [] }
+        project = await project.update()
+        project = await project.publish()
+        console.log(`Cleared assetsCollection for project: ${project.sys.id}`)
+      }
+
+      // Step 2: Upload new images
       const uploadedAssetLinks = []
 
       for (const imageFile of images) {
@@ -107,14 +168,22 @@ async function uploadProjectImages() {
         const contentType = mime.lookup(filePath) || 'application/octet-stream'
         const fileName = path.basename(imageFile)
 
+        // Extract a better title from the filename (e.g., "blue night_image_065.webp" -> "blue night 065")
+        const fileNameParts = fileName.split('_image_')
+        const projectPart = fileNameParts[0]
+        const numberPart = fileNameParts[1]
+          ? fileNameParts[1].replace(/\.[^/.]+$/, '')
+          : ''
+        const betterTitle = `${projectPart} ${numberPart}`.trim()
+
         console.log(`Uploading ${imageFile}...`)
 
         try {
-          // Create the asset
+          // Create the asset with a better title
           let asset = await environment.createAssetFromFiles({
             fields: {
               title: {
-                'en-US': path.basename(imageFile, path.extname(imageFile)),
+                'en-US': betterTitle,
               },
               description: {
                 'en-US': `Image for ${project.fields.name['en-US']}`,
@@ -133,7 +202,9 @@ async function uploadProjectImages() {
           asset = await asset.processForAllLocales()
           asset = await asset.publish()
 
-          console.log(`Published asset: ${asset.sys.id}`)
+          console.log(
+            `Published asset: ${asset.sys.id} with title: ${betterTitle}`,
+          )
 
           // Add the asset to the collection
           uploadedAssetLinks.push({
@@ -202,4 +273,4 @@ async function uploadProjectImages() {
   }
 }
 
-uploadProjectImages()
+cleanAndUploadImages()

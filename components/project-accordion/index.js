@@ -66,7 +66,10 @@ export const ProjectAccordion = ({ data }) => {
                           alt={`${item.name} - obrázek ${i + 1}`}
                           width={343}
                           height={211}
-                          style={{ objectFit: 'cover' }}
+                          style={{
+                            objectFit: 'contain',
+                            backgroundColor: '#000',
+                          }}
                         />
                       </div>
                     ))
@@ -77,6 +80,7 @@ export const ProjectAccordion = ({ data }) => {
                         width={343}
                         height={211}
                         small
+                        objectFit="contain"
                       />
                     ))}
               </Slider>

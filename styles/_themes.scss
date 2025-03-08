@@ -10,7 +10,7 @@ $themes: (
   'light': (
     'primary': map.get($colors, 'white'),
     'secondary': map.get($colors, 'black'),
-    'contrast': map.get($colors, 'vision-purple'),
+    'contrast': map.get($colors, 'black'),
   ),
   'dark': (
     'primary': map.get($colors, 'black'),
@@ -18,7 +18,7 @@ $themes: (
     'contrast': map.get($colors, 'vision-teal'),
   ),
   'vision': (
-    'primary': map.get($colors, 'vision-purple'),
+    'primary': map.get($colors, 'black'),
     'secondary': map.get($colors, 'white'),
     'contrast': map.get($colors, 'vision-pink'),
   ),
