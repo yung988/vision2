@@ -24,11 +24,7 @@ export const Header = ({ principles = [], contact }) => {
       <div className={s.top}>
         <div className={s.left}>
           <Link href="/" className={s.logo}>
-            {isDesktop ? (
-              <StudioVisionBanner className={s.title} />
-            ) : (
-              <StudioVisionBanner className={s.title} />
-            )}
+            <StudioVisionBanner className={s.title} isMobile={!isDesktop} />
           </Link>
         </div>
 
