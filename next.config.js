@@ -1,9 +1,19 @@
 const withPWA = require('@ducanh2912/next-pwa').default({
   dest: 'public',
 })
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+
+// Podmíněný import bundle-analyzeru
+let withBundleAnalyzer = (config) => config
+try {
+  withBundleAnalyzer = require('@next/bundle-analyzer')({
+    enabled: process.env.ANALYZE === 'true',
+  })
+} catch (e) {
+  console.log(
+    'Warning: @next/bundle-analyzer not found, skipping bundle analysis',
+  )
+}
+
 const million = require('million/compiler')
 
 const path = require('path')
