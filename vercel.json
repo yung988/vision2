@@ -5,12 +5,14 @@
       "src": "package.json",
       "use": "@vercel/next",
       "config": {
-        "installCommand": "npm install",
-        "buildCommand": "next build"
+        "installCommand": "pnpm install --no-frozen-lockfile",
+        "buildCommand": "next build",
+        "nodeVersion": "18.x"
       }
     }
   ],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "NEXT_TELEMETRY_DISABLED": "1"
   }
 }
