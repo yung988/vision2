@@ -27,6 +27,15 @@
       min-height: 300px;
     }
 
+    &.fullWidth {
+      grid-column: span 2;
+      height: mobile-vw(350px);
+
+      @include desktop {
+        height: desktop-vw(600px);
+      }
+    }
+
     &.videoWrap {
       position: relative;
 

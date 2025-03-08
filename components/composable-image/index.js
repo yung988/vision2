@@ -17,14 +17,18 @@ export function ComposableImage({
 
   return (
     <div className={s.images}>
-      {sources.items.map((source) =>
-        source.url.includes('videos.ctfassets.net') ? (
+      {sources.items.map((source, index) => {
+        // První obrázek bude na celou šířku, pokud jsou alespoň 3 obrázky
+        const isFullWidth = index === 0 && sources.items.length >= 3
+
+        return source.url.includes('videos.ctfassets.net') ? (
           <div
             className={cn(
               s.image,
               s.videoWrap,
               large && s.large,
               small && s.small,
+              isFullWidth && s.fullWidth,
             )}
             key={source.url}
           >
@@ -44,19 +48,24 @@ export function ComposableImage({
             alt={source.title}
             width={adjustedWidth}
             height={adjustedHeight}
-            className={cn(s.image, large && s.large, small && s.small)}
+            className={cn(
+              s.image,
+              large && s.large,
+              small && s.small,
+              isFullWidth && s.fullWidth,
+            )}
             style={{
               objectFit: objectFit,
               backgroundColor: '#000',
               objectPosition: 'center',
             }}
-            priority={priority}
+            priority={priority || index === 0} // První obrázek má vždy prioritu
             quality={95}
             sizes="(max-width: 768px) 100vw, 75vw"
             fill={false}
           />
-        ),
-      )}
+        )
+      })}
     </div>
   )
 }
