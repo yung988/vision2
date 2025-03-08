@@ -1,104 +1,93 @@
-.container {
-  width: 100%;
+.header {
   position: relative;
+  width: 100%;
+  padding-top: mobile-vw(16px);
+
+  @include desktop {
+    padding-top: desktop-vw(16px);
+  }
 
   .top {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-top: mobile-vw(16px);
-    padding-bottom: mobile-vw(24px);
+    padding: 0 mobile-vw(16px);
+    margin-bottom: mobile-vw(16px);
 
     @include desktop {
-      padding-top: desktop-vw(16px);
-      padding-bottom: desktop-vw(8px);
+      padding: 0 desktop-vw(16px);
+      margin-bottom: desktop-vw(16px);
     }
 
-    .eggs {
-      grid-column: span 2;
+    .left {
+      .logo {
+        display: block;
+
+        .title {
+          padding: 0;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: mobile-vw(16px);
 
       @include desktop {
-        grid-column: span 1;
+        gap: desktop-vw(16px);
       }
 
-      .egg {
-        display: inline-block;
-        aspect-ratio: 1;
-        width: mobile-vw(24px);
-        transition: color 300ms var(--ease-out-expo);
+      .principles {
+        display: none;
 
         @include desktop {
-          width: desktop-vw(24px);
+          display: flex;
+          align-items: center;
+          gap: desktop-vw(8px);
         }
 
-        + .egg {
-          margin-left: mobile-vw(9px);
-
-          @include desktop {
-            margin-left: desktop-vw(9px);
-          }
+        .principle {
+          display: flex;
+          align-items: center;
+          gap: desktop-vw(8px);
         }
 
-        @include hover {
-          &:hover {
-            color: var(--green);
-          }
+        .star {
+          width: desktop-vw(12px);
+          height: desktop-vw(12px);
+          color: var(--green);
         }
       }
-    }
 
-    .cta {
-      grid-column: 3/-1;
-      text-align: end;
-      margin-left: auto;
-
-      @include desktop {
-        grid-column: 8/-1;
+      .contact {
+        color: var(--green);
       }
     }
   }
 
   .marquee {
-    grid-column: 5/8;
-    color: var(--grey);
-    text-transform: uppercase;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
 
-    .principle {
-      font-weight: 700;
-
-      @include desktop {
-        transition: filter 300ms ease-in-out;
-        filter: blur(1.5px);
-      }
-
-      @include hover {
-        &:hover {
-          filter: blur(0);
-        }
-      }
-
-      .separator {
-        margin: 0 mobile-vw(16px);
-        @include desktop {
-          margin: 0 desktop-vw(16px);
-        }
-      }
-    }
-
-    @include mobile {
-      margin: mobile-vw(24px) 0;
+    &.hidden {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 
-  .header {
+  .form {
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 
-    .title {
-      grid-column: 1/-1;
-      text-shadow: 0 0 10px;
-      margin: desktop-vw(14px) 0;
-
-      @include mobile {
-        margin: mobile-vw(10px) 0;
-      }
+    &.hidden {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 }
