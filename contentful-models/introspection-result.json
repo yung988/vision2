@@ -1,0 +1,3723 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "name": "Query",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "asset",
+            "type": {
+              "name": "Asset",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "assetCollection",
+            "type": {
+              "name": "AssetCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "projectList",
+            "type": {
+              "name": "ProjectList",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "projectListCollection",
+            "type": {
+              "name": "ProjectListCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "project",
+            "type": {
+              "name": "Project",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "projectCollection",
+            "type": {
+              "name": "ProjectCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contentTypeAsset",
+            "type": {
+              "name": "ContentTypeAsset",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contentTypeAssetCollection",
+            "type": {
+              "name": "ContentTypeAssetCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contact",
+            "type": {
+              "name": "Contact",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contactCollection",
+            "type": {
+              "name": "ContactCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "faq",
+            "type": {
+              "name": "Faq",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "faqCollection",
+            "type": {
+              "name": "FaqCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "footer",
+            "type": {
+              "name": "Footer",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "footerCollection",
+            "type": {
+              "name": "FooterCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "link",
+            "type": {
+              "name": "Link",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "linkCollection",
+            "type": {
+              "name": "LinkCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "studioVision",
+            "type": {
+              "name": "StudioVision",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "studioVisionCollection",
+            "type": {
+              "name": "StudioVisionCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_node",
+            "type": {
+              "name": "_Node",
+              "kind": "INTERFACE",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "Asset",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "title",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contentType",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "fileName",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "size",
+            "type": {
+              "name": "Int",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "url",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "width",
+            "type": {
+              "name": "Int",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "height",
+            "type": {
+              "name": "Int",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "AssetLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sys",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "spaceId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "environmentId",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "publishedAt",
+            "type": {
+              "name": "DateTime",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "firstPublishedAt",
+            "type": {
+              "name": "DateTime",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "publishedVersion",
+            "type": {
+              "name": "Int",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "locale",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "String",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "DateTime",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "Int",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ContentfulMetadata",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "tags",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "concepts",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "TaxonomyConcept",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContentfulTag",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "name",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ImageTransformOptions",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "Dimension",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "Quality",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ImageResizeStrategy",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ImageResizeFocus",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "HexColor",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ImageFormat",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "AssetLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contentTypeAssetCollection",
+            "type": {
+              "name": "ContentTypeAssetCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "EntryCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Entry",
+        "kind": "INTERFACE",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ContentTypeAssetCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContentTypeAsset",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "ContentTypeAssetLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "imagesCollectionCollection",
+            "type": {
+              "name": "AssetCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Node",
+        "kind": "INTERFACE",
+        "fields": [
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ID",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ContentTypeAssetLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "projectCollection",
+            "type": {
+              "name": "ProjectCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Project",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "ProjectLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "name",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "industry",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "body",
+            "type": {
+              "name": "ProjectBody",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "testimonial",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "assetsCollectionCollection",
+            "type": {
+              "name": "ProjectAssetsCollectionCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "services",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "stack",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "link",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "projectListCollection",
+            "type": {
+              "name": "ProjectListCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectListCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectList",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "ProjectListLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "listCollectionCollection",
+            "type": {
+              "name": "ProjectListListCollectionCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectListLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectListListCollectionCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "cfContentTypeAssetNestedFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "SysFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "Float",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ContentfulMetadataFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ContentfulMetadataConceptsFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ContentfulMetadataConceptsDescendantsFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ContentfulMetadataTagsFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ProjectListListCollectionCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ProjectLinkingCollectionsProjectListCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ProjectBody",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "json",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "JSON",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "links",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ProjectBodyLinks",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "JSON",
+        "kind": "SCALAR",
+        "fields": null
+      },
+      {
+        "name": "ProjectBodyLinks",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entries",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ProjectBodyEntries",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "assets",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ProjectBodyAssets",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "resources",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ProjectBodyResources",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectBodyEntries",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectBodyAssets",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectBodyResources",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectBodyResourcesBlock",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ResourceLink",
+        "kind": "INTERFACE",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ResourceSys",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "urn",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "linkType",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectBodyResourcesInline",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectBodyResourcesHyperlink",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProjectAssetsCollectionCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContentTypeAssetFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ProjectAssetsCollectionCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ContentTypeAssetLinkingCollectionsProjectCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "AssetCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "AssetFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "AssetOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ProjectListFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "cfProjectNestedFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ProjectListOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ProjectOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ContentTypeAssetOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "Contact",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "ContactLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "ContactDescription",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "form",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "faqsCollectionCollection",
+            "type": {
+              "name": "ContactFaqsCollectionCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "thankYouMessage",
+            "type": {
+              "name": "ContactThankYouMessage",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescription",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "json",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "JSON",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "links",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactDescriptionLinks",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionLinks",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entries",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactDescriptionEntries",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "assets",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactDescriptionAssets",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "resources",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactDescriptionResources",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionEntries",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionAssets",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionResources",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionResourcesBlock",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionResourcesInline",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactDescriptionResourcesHyperlink",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactFaqsCollectionCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Faq",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "FaqLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "title",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "content",
+            "type": {
+              "name": "FaqContent",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "contactCollection",
+            "type": {
+              "name": "ContactCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqLinkingCollectionsContactCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "FaqContent",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "json",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "JSON",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "links",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "FaqContentLinks",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentLinks",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entries",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "FaqContentEntries",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "assets",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "FaqContentAssets",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "resources",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "FaqContentResources",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentEntries",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentAssets",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentResources",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentResourcesBlock",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentResourcesInline",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqContentResourcesHyperlink",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ContactFaqsCollectionCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "ContactThankYouMessage",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "json",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "JSON",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "links",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactThankYouMessageLinks",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageLinks",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entries",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactThankYouMessageEntries",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "assets",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactThankYouMessageAssets",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "resources",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContactThankYouMessageResources",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageEntries",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageAssets",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageResources",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageResourcesBlock",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageResourcesInline",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactThankYouMessageResourcesHyperlink",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "cfFaqNestedFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "ContactOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "FaqCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "FaqOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "Footer",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "FooterLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "linksCollectionCollection",
+            "type": {
+              "name": "FooterLinksCollectionCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "FooterLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "FooterLinksCollectionCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Link",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "LinkLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "text",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "url",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "LinkLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "footerCollection",
+            "type": {
+              "name": "FooterCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "FooterCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "LinkLinkingCollectionsFooterCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "LinkFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "FooterLinksCollectionCollectionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "FooterFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "cfLinkNestedFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "FooterOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "LinkCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "LinkOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "StudioVision",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Sys",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "contentfulMetadata",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ContentfulMetadata",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "linkedFrom",
+            "type": {
+              "name": "StudioVisionLinkingCollections",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "_id",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "principles",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "about",
+            "type": {
+              "name": "StudioVisionAbout",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "phoneNumber",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "email",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionLinkingCollections",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entryCollection",
+            "type": {
+              "name": "EntryCollection",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAbout",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "json",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "JSON",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "links",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "StudioVisionAboutLinks",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutLinks",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "entries",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "StudioVisionAboutEntries",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "assets",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "StudioVisionAboutAssets",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "resources",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "StudioVisionAboutResources",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutEntries",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutAssets",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutResources",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "block",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "inline",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "hyperlink",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutResourcesBlock",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutResourcesInline",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionAboutResourcesHyperlink",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "sys",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "ResourceSys",
+                "kind": "OBJECT"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionCollection",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "total",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "skip",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "limit",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Int",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "StudioVisionFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "StudioVisionOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "EntryFilter",
+        "kind": "INPUT_OBJECT",
+        "fields": null
+      },
+      {
+        "name": "EntryOrder",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "__Schema",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "types",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "queryType",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "__Type",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "mutationType",
+            "type": {
+              "name": "__Type",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "subscriptionType",
+            "type": {
+              "name": "__Type",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "directives",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "__Type",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "kind",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "__TypeKind",
+                "kind": "ENUM"
+              }
+            }
+          },
+          {
+            "name": "name",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "specifiedByURL",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "fields",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL"
+              }
+            }
+          },
+          {
+            "name": "interfaces",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL"
+              }
+            }
+          },
+          {
+            "name": "possibleTypes",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL"
+              }
+            }
+          },
+          {
+            "name": "enumValues",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL"
+              }
+            }
+          },
+          {
+            "name": "inputFields",
+            "type": {
+              "name": null,
+              "kind": "LIST",
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL"
+              }
+            }
+          },
+          {
+            "name": "ofType",
+            "type": {
+              "name": "__Type",
+              "kind": "OBJECT",
+              "ofType": null
+            }
+          },
+          {
+            "name": "isOneOf",
+            "type": {
+              "name": "Boolean",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "__TypeKind",
+        "kind": "ENUM",
+        "fields": null
+      },
+      {
+        "name": "__Field",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "args",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "type",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "__Type",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "isDeprecated",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "deprecationReason",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "__InputValue",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "type",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "__Type",
+                "kind": "OBJECT"
+              }
+            }
+          },
+          {
+            "name": "defaultValue",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "isDeprecated",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "deprecationReason",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "__EnumValue",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "isDeprecated",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "deprecationReason",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "__Directive",
+        "kind": "OBJECT",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "description",
+            "type": {
+              "name": "String",
+              "kind": "SCALAR",
+              "ofType": null
+            }
+          },
+          {
+            "name": "isRepeatable",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR"
+              }
+            }
+          },
+          {
+            "name": "locations",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          },
+          {
+            "name": "args",
+            "type": {
+              "name": null,
+              "kind": "NON_NULL",
+              "ofType": {
+                "name": null,
+                "kind": "LIST"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "__DirectiveLocation",
+        "kind": "ENUM",
+        "fields": null
+      }
+    ]
+  }
+}

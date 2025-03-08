@@ -3,7 +3,7 @@ import cn from 'clsx'
 import { ComposableImage } from 'components/composable-image'
 import { ScrollableBox } from 'components/scrollable-box'
 import { useStore } from 'lib/store'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import s from './gallery.module.scss'
 
 export function Gallery() {
@@ -15,6 +15,7 @@ export function Gallery() {
       state.setGalleryVisible,
     ],
   )
+  const [hasAssets, setHasAssets] = useState(false)
 
   useOutsideClickEvent(contentRef, () => setGalleryVisible(false))
 
@@ -29,6 +30,23 @@ export function Gallery() {
     return () => document.removeEventListener('keydown', escFunction, false)
   }, [])
 
+  useEffect(() => {
+    if (galleryVisible && selectedProject) {
+      console.log('Gallery visible, selected project:', selectedProject)
+      const hasValidAssets =
+        selectedProject?.assetsCollection?.items?.length > 0 &&
+        selectedProject.assetsCollection.items.some(
+          (asset) => asset.imagesCollection?.items?.length > 0,
+        )
+      console.log('Has valid assets:', hasValidAssets)
+      setHasAssets(hasValidAssets)
+    }
+  }, [galleryVisible, selectedProject])
+
+  if (!selectedProject) {
+    return null
+  }
+
   return (
     <div className={cn(s.gallery, galleryVisible && s.visible)}>
       <button className={s.close} onClick={() => setGalleryVisible(false)}>
@@ -41,16 +59,26 @@ export function Gallery() {
         <span className={cn(s.text, 'p-xs text-uppercase')}>Close</span>
       </button>
       <ScrollableBox className={s.scroller} reset={!galleryVisible}>
-        {selectedProject?.assetsCollection?.items.map((asset, i) => (
-          <div key={i} ref={contentRef}>
-            <ComposableImage
-              sources={asset.imagesCollection}
-              width={1557}
-              height={916.5}
-              large
-            />
+        {hasAssets ? (
+          selectedProject.assetsCollection.items
+            .filter((asset) => asset.imagesCollection?.items?.length > 0)
+            .map((asset, i) => (
+              <div key={i} ref={i === 0 ? contentRef : null}>
+                <ComposableImage
+                  sources={asset.imagesCollection}
+                  width={1557}
+                  height={916.5}
+                  large
+                />
+              </div>
+            ))
+        ) : (
+          <div className={s.noAssets} ref={contentRef}>
+            <p className="p text-uppercase">
+              No images available for this project
+            </p>
           </div>
-        ))}
+        )}
       </ScrollableBox>
     </div>
   )

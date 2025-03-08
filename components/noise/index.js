@@ -48,7 +48,7 @@ export function Noise() {
       -Math.random() * 200,
       -Math.random() * 200,
       canvas.width + 200,
-      canvas.height + 200
+      canvas.height + 200,
     )
   })
 

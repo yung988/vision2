@@ -11,11 +11,10 @@ import {
   contactEntryQuery,
   footerEntryQuery,
   projectListEntryQuery,
-  studioFreightEntryQuery,
+  studioVisionEntryQuery,
 } from 'contentful/queries/home.graphql'
 import { renderer } from 'contentful/renderer'
 import { Layout } from 'layouts/default'
-import { getForm } from 'lib/hubspot'
 import { slugify } from 'lib/slugify'
 import { useStore } from 'lib/store'
 import dynamic from 'next/dynamic'
@@ -32,7 +31,7 @@ const Gallery = dynamic(
   },
 )
 
-export default function Home({ studioFreight, footer, contact, projects }) {
+export default function Home({ studioVision, footer, contact, projects }) {
   const router = useRouter()
 
   const [showInfoModal, setShowInfoModal] = useState(false)
@@ -51,8 +50,26 @@ export default function Home({ studioFreight, footer, contact, projects }) {
       slugify(item.name).includes(searchTerm),
     )
 
-    setSelectedProject(matchingItem || projects.items[0])
-  }, [router.asPath])
+    // Zajistíme, že vždy bude vybrán nějaký projekt
+    if (projects.items && projects.items.length > 0) {
+      const projectToSelect = matchingItem || projects.items[0]
+      setSelectedProject(projectToSelect)
+      console.log('Vybraný projekt:', projectToSelect)
+      console.log(
+        'Projekt má assets:',
+        projectToSelect?.assetsCollection?.items?.length || 0,
+      )
+      if (projectToSelect?.assetsCollection?.items) {
+        projectToSelect.assetsCollection.items.forEach((asset, i) => {
+          console.log(`Asset ${i}:`, asset)
+          console.log(
+            `Asset ${i} má obrázky:`,
+            asset.imagesCollection?.items?.length || 0,
+          )
+        })
+      }
+    }
+  }, [router.asPath, projects.items, setSelectedProject])
 
   useEffect(() => {
     if (selectedProject) {
@@ -65,17 +82,17 @@ export default function Home({ studioFreight, footer, contact, projects }) {
 
   return (
     <Layout
-      theme="dark"
-      principles={studioFreight.principles}
+      theme="vision"
+      principles={studioVision.principles}
       studioInfo={{
-        phone: studioFreight.phoneNumber,
-        email: studioFreight.email,
+        phone: studioVision.phoneNumber,
+        email: studioVision.email,
       }}
       contactData={contact}
       footerLinks={footer.linksCollection.items}
     >
       {!isDesktop ? (
-        <LayoutMobile studioFreight={studioFreight} projects={projects} />
+        <LayoutMobile studioVision={studioVision} projects={projects} />
       ) : (
         <ClientOnly>
           <div className={cn(s.content, 'layout-grid')}>
@@ -86,7 +103,7 @@ export default function Home({ studioFreight, footer, contact, projects }) {
                 About
               </p>
               <ScrollableBox className={s.description}>
-                {renderer(studioFreight.about)}
+                {renderer(studioVision.about)}
               </ScrollableBox>
             </section>
             <section className={s.projects}>
@@ -182,8 +199,8 @@ export default function Home({ studioFreight, footer, contact, projects }) {
                     Enlarge
                   </button>
                   <ScrollableBox reset={showInfoModal || resetScroll}>
-                    {selectedProject?.assetsCollection?.items.map(
-                      (asset, i) => (
+                    {selectedProject?.assetsCollection?.items?.length > 0 ? (
+                      selectedProject.assetsCollection.items.map((asset, i) => (
                         <button
                           className={s.assetButton}
                           key={i}
@@ -194,14 +211,24 @@ export default function Home({ studioFreight, footer, contact, projects }) {
                             setGalleryVisible(true)
                           }}
                         >
-                          <ComposableImage
-                            sources={asset.imagesCollection}
-                            priority={i === 0}
-                            width={1026}
-                            height={604}
-                          />
+                          {asset.imagesCollection?.items?.length > 0 ? (
+                            <ComposableImage
+                              sources={asset.imagesCollection}
+                              priority={i === 0}
+                              width={1026}
+                              height={604}
+                            />
+                          ) : (
+                            <div className={s.noImage}>
+                              <p>No image available</p>
+                            </div>
+                          )}
                         </button>
-                      ),
+                      ))
+                    ) : (
+                      <div className={s.noAssets}>
+                        <p>No assets available for this project</p>
+                      </div>
                     )}
                   </ScrollableBox>
                 </div>
@@ -278,32 +305,70 @@ export default function Home({ studioFreight, footer, contact, projects }) {
 }
 
 export async function getStaticProps({ preview = false }) {
-  const [{ studioFreight }, { footer }, { contact }, { projectList }] =
-    await Promise.all([
-      fetchCmsQuery(studioFreightEntryQuery, {
-        preview,
-      }),
-      fetchCmsQuery(footerEntryQuery, {
-        preview,
-      }),
-      fetchCmsQuery(contactEntryQuery, {
-        preview,
-      }),
-      fetchCmsQuery(projectListEntryQuery, {
-        preview,
-      }),
-    ])
+  try {
+    // Načtení dat z Contentful
+    const studioVisionData = await fetchCmsQuery(studioVisionEntryQuery, {
+      preview,
+    })
+    const footerData = await fetchCmsQuery(footerEntryQuery, {
+      preview,
+    })
+    const contactData = await fetchCmsQuery(contactEntryQuery, {
+      preview,
+    })
+    const projectListData = await fetchCmsQuery(projectListEntryQuery, {
+      preview,
+    })
 
-  contact.form = await getForm(contact.form)
+    // Kontrola, zda všechna data byla úspěšně načtena
+    if (!studioVisionData || !footerData || !contactData || !projectListData) {
+      console.error('Některá data z Contentful nebyla načtena')
+      return {
+        notFound: true,
+      }
+    }
 
-  return {
-    props: {
-      studioFreight,
-      footer,
-      contact,
-      projects: projectList.listCollection,
-      id: 'home',
-    },
-    revalidate: 30,
+    // Extrakce dat z odpovědí
+    const studioVision = studioVisionData.studioVisionData
+    const footer = footerData.footer
+    const contact = contactData.contact
+    const projectList = projectListData.projectList
+
+    // Kontrola, zda všechny entity existují
+    if (!studioVision || !footer || !contact || !projectList) {
+      console.error('Některé entity v Contentful neexistují')
+      return {
+        notFound: true,
+      }
+    }
+
+    // Přizpůsobení dat pro kompatibilitu s komponentami
+    if (footer.links) {
+      footer.linksCollection = footer.links
+    }
+
+    if (contact.faqs) {
+      contact.faqsCollection = contact.faqs
+    }
+
+    if (projectList.list) {
+      projectList.listCollection = projectList.list
+    }
+
+    return {
+      props: {
+        studioVision,
+        footer,
+        contact,
+        projects: projectList.listCollection || { items: [] },
+        id: 'home',
+      },
+      revalidate: 30,
+    }
+  } catch (error) {
+    console.error('Chyba při načítání dat z Contentful:', error)
+    return {
+      notFound: true,
+    }
   }
 }

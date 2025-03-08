@@ -13,7 +13,7 @@ export function Footer({ className, style, links, studioInfo }) {
       <Separator className="layout-block" />
       <div className={cn(s.footer, 'layout-grid', className)} style={style}>
         <a
-          href="/StudioFreight-Capabilities.pdf"
+          href="/StudioVision-Capabilities.pdf"
           download
           className={cn(s.column, 'p-s text-accent')}
           onClick={() => va.track('Downloaded Capabilities deck')}
@@ -96,7 +96,7 @@ export function Footer({ className, style, links, studioInfo }) {
         {isMobile === false && (
           <ul className={s.column}>
             <li className="p-s text-muted">
-              &copy; {new Date().getFullYear()}
+              &copy; {new Date().getFullYear()} Studio Vision
             </li>
           </ul>
         )}
@@ -105,8 +105,8 @@ export function Footer({ className, style, links, studioInfo }) {
       {isMobile === true && (
         <section className={s['footer-image']}>
           <Image
-            src="/mobile-temp-images/footer.png"
-            alt="studio freight"
+            src="/android-chrome-512x512.png"
+            alt="studio vision"
             fill
             className={s.image}
           />

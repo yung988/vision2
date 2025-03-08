@@ -1,0 +1,31 @@
+{
+  "name": "Link",
+  "description": "A link with text and URL",
+  "displayField": "text",
+  "fields": [
+    {
+      "id": "text",
+      "name": "Text",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": []
+    },
+    {
+      "id": "url",
+      "name": "URL",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": [
+        {
+          "regexp": {
+            "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-\\/]))?$",
+            "flags": ""
+          },
+          "message": "Please enter a valid URL"
+        }
+      ]
+    }
+  ]
+}

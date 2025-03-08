@@ -1,8 +1,11 @@
 #import "../fragments/link.graphql"
 #import "../fragments/image.graphql"
 
-query studioFreightEntryQuery($preview: Boolean!) {
-  studioFreight(id: "2Aj2bopjw3dWELYGPP1ciN", preview: $preview) {
+query studioVisionEntryQuery($preview: Boolean!) {
+  studioVisionData: studioVision(
+    id: "MvVZP2XQEBTqekLk3C5HH"
+    preview: $preview
+  ) {
     sys {
       id
     }
@@ -16,20 +19,24 @@ query studioFreightEntryQuery($preview: Boolean!) {
 }
 
 query footerEntryQuery($preview: Boolean!) {
-  footer(id: "79mFjxkAPeJr60vPYhCeDC", preview: $preview) {
+  footer(id: "6ACr7DHC1BY7UNOysHjTdo", preview: $preview) {
     sys {
       id
     }
-    linksCollection {
+    linksCollection: linksCollectionCollection {
       items {
-        ...Link
+        sys {
+          id
+        }
+        text
+        url
       }
     }
   }
 }
 
 query contactEntryQuery($preview: Boolean!) {
-  contact(id: "4Jf4kYvhy8vgKraoM0oLQO", preview: $preview) {
+  contact(id: "7nWs0r6bdFGRByxgre0QnT", preview: $preview) {
     sys {
       id
     }
@@ -37,7 +44,7 @@ query contactEntryQuery($preview: Boolean!) {
       json
     }
     form
-    faqsCollection {
+    faqsCollection: faqsCollectionCollection {
       items {
         title
         content {
@@ -52,11 +59,11 @@ query contactEntryQuery($preview: Boolean!) {
 }
 
 query projectListEntryQuery($preview: Boolean!) {
-  projectList(id: "6nQzRceL1TxfIzIYatjR8T", preview: $preview) {
+  projectList(id: "5VuQq4jN1UZ8ihkWMiNiBX", preview: $preview) {
     sys {
       id
     }
-    listCollection {
+    listCollection: listCollectionCollection(limit: 20) {
       items {
         sys {
           id
@@ -67,9 +74,9 @@ query projectListEntryQuery($preview: Boolean!) {
           json
         }
         testimonial
-        assetsCollection(limit: 20) {
+        assetsCollection: assetsCollectionCollection(limit: 5) {
           items {
-            imagesCollection(limit: 20) {
+            imagesCollection: imagesCollectionCollection(limit: 10) {
               items {
                 url
                 title
@@ -80,6 +87,8 @@ query projectListEntryQuery($preview: Boolean!) {
         services
         stack
         link
+        localImages
+        mainImage
       }
     }
   }

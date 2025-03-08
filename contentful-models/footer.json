@@ -1,0 +1,24 @@
+{
+  "name": "Footer",
+  "description": "Footer information",
+  "displayField": "sys.id",
+  "fields": [
+    {
+      "id": "linksCollection",
+      "name": "Links Collection",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": ["link"]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

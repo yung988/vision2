@@ -1,0 +1,23 @@
+{
+  "name": "FAQ",
+  "description": "Frequently Asked Question",
+  "displayField": "title",
+  "fields": [
+    {
+      "id": "title",
+      "name": "Title",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": []
+    },
+    {
+      "id": "content",
+      "name": "Content",
+      "type": "RichText",
+      "localized": false,
+      "required": true,
+      "validations": []
+    }
+  ]
+}

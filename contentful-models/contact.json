@@ -1,0 +1,64 @@
+{
+  "name": "Contact",
+  "description": "Contact information and form",
+  "displayField": "name",
+  "fields": [
+    {
+      "id": "name",
+      "name": "Name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": []
+    },
+    {
+      "id": "description",
+      "name": "Description",
+      "type": "RichText",
+      "localized": false,
+      "required": false,
+      "validations": []
+    },
+    {
+      "id": "email",
+      "name": "Contact Email",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": [
+        {
+          "regexp": {
+            "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+            "flags": ""
+          },
+          "message": "Please enter a valid email address"
+        }
+      ]
+    },
+    {
+      "id": "faqsCollection",
+      "name": "FAQs Collection",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": ["faq"]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "thankYouMessage",
+      "name": "Thank You Message",
+      "type": "RichText",
+      "localized": false,
+      "required": false,
+      "validations": []
+    }
+  ]
+}

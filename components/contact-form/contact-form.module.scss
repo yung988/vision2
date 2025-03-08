@@ -1,0 +1,96 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: mobile-vw(15px);
+  width: 100%;
+
+  @include desktop {
+    gap: desktop-vw(24px);
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: mobile-vw(8px);
+
+  @include desktop {
+    gap: desktop-vw(8px);
+  }
+}
+
+.label {
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  color: var(--theme-secondary);
+  font-size: mobile-vw(12px);
+
+  @include desktop {
+    font-size: desktop-vw(12px);
+  }
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  color: var(--theme-secondary);
+  border: 1px solid currentColor;
+  padding: mobile-vw(15px) mobile-vw(16px);
+  height: mobile-vw(48px);
+  border-radius: mobile-vw(10px);
+  font-size: mobile-vw(16px);
+
+  @include desktop {
+    padding: desktop-vw(15px) desktop-vw(16px);
+    height: desktop-vw(48px);
+    border-radius: desktop-vw(10px);
+    font-size: desktop-vw(16px);
+  }
+
+  &::placeholder {
+    color: var(--grey);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--theme-primary);
+  }
+
+  &:invalid {
+    border-color: var(--red);
+  }
+}
+
+.textarea {
+  height: mobile-vw(177px);
+  resize: vertical;
+
+  @include desktop {
+    height: desktop-vw(177px);
+  }
+}
+
+.error {
+  color: var(--red);
+  font-size: mobile-vw(12px);
+
+  @include desktop {
+    font-size: desktop-vw(12px);
+  }
+}
+
+.button {
+  width: 100%;
+  height: mobile-vw(48px);
+  margin-top: mobile-vw(8px);
+
+  @include desktop {
+    height: desktop-vw(48px);
+    margin-top: desktop-vw(8px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

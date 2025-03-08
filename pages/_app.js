@@ -38,9 +38,9 @@ if (typeof window !== 'undefined') {
     url: 'https://studiofreight.com',
     credits: [
       {
-        name: 'Studio Freight',
-        email: 'hello@studiofreight.com',
-        website: 'https://studiofreight.com',
+        name: 'Studio Vision',
+        email: 'hello@studiovision.com',
+        website: 'https://http://localhost:3002/',
       },
     ],
   }

@@ -220,3 +220,20 @@
   border-right: 1px solid var(--grey);
   padding-right: desktop-vw(24px);
 }
+
+.noImage,
+.noAssets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-light);
+  border-radius: desktop-vw(8px);
+  height: desktop-vw(403px);
+  width: 100%;
+  margin-bottom: desktop-vw(8px);
+
+  p {
+    color: var(--grey);
+    text-transform: uppercase;
+  }
+}

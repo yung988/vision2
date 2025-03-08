@@ -30,7 +30,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'assets.studiofreight.com',
+        hostname: 'assets.http://localhost:3002/',
       },
     ],
     formats: ['image/avif', 'image/webp'],

@@ -4,13 +4,13 @@ import { ProjectAccordion } from 'components/project-accordion'
 import { renderer } from 'contentful/renderer'
 import s from './layout-mobile.module.scss'
 
-const LayoutMobile = ({ projects, studioFreight }) => {
+const LayoutMobile = ({ projects, studioVision }) => {
   return (
     <div className={s.content}>
       <section className={s['hero-image']}>
         <Image
-          src="/mobile-temp-images/tetsuo.jpg"
-          alt="tetsuo placeholder face"
+          src="/android-chrome-512x512.png"
+          alt="Studio Vision hero image"
           fill
         />
       </section>
@@ -19,8 +19,8 @@ const LayoutMobile = ({ projects, studioFreight }) => {
       </section>
       <section className={s.image}>
         <Image
-          src={'/mobile-temp-images/sf-game-boy.png'}
-          alt={'tetsuo placeholder face'}
+          src={'/android-chrome-192x192.png'}
+          alt={'Studio Vision game boy'}
           fill
         />
       </section>
@@ -28,7 +28,7 @@ const LayoutMobile = ({ projects, studioFreight }) => {
         <p className={cn(s.title, 'p text-bold text-uppercase text-muted')}>
           About
         </p>
-        <div className={s.description}>{renderer(studioFreight.about)}</div>
+        <div className={s.description}>{renderer(studioVision.about)}</div>
       </section>
     </div>
   )

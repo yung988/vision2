@@ -62,8 +62,8 @@ select {
 }
 
 *::selection {
-  background-color: var(--theme-secondary);
-  color: var(--theme-primary);
+  background-color: var(--vision-purple);
+  color: var(--white);
 }
 
 svg.icon {
@@ -82,7 +82,7 @@ svg.icon {
 
 .decorate {
   position: relative;
-  color: var(--green);
+  color: var(--vision-teal);
   transition: color 0.95s cubic-bezier(0.19, 1, 0.22, 1);
 
   &:before {

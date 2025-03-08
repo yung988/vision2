@@ -1,11 +1,8 @@
-import * as Accordion from '@radix-ui/react-accordion'
 import cn from 'clsx'
-import { Hubspot } from 'components/hubspot'
+import { ContactForm as SimpleContactForm } from 'components/contact-form'
 import { ScrollableBox } from 'components/scrollable-box'
 import { Separator } from 'components/separator'
-import { renderer } from 'contentful/faq-renderer'
 import { renderer as globalRenderer } from 'contentful/renderer'
-import { slugify } from 'lib/slugify'
 import { useStore } from 'lib/store'
 import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
@@ -27,7 +24,7 @@ export function ContactForm({ data }) {
   const closeContactTab = () => {
     setContactIsOpen(false)
     router.push({
-      pathname: router.pathname, // not router.asPath
+      pathname: router.pathname,
       query: { confirm: true },
       shallow: true,
     })
@@ -49,6 +46,25 @@ export function ContactForm({ data }) {
     setContactIsOpen(contact)
   }, [contact])
 
+  const handleSubmit = async (formData) => {
+    try {
+      // Here you can implement your own form submission logic
+      // For example, sending to your backend API or email service
+      console.log('Form submitted:', formData)
+
+      // Show thank you message
+      setShowThanks(true)
+
+      // Optional: Close form after delay
+      setTimeout(() => {
+        closeContactTab()
+      }, 3000)
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('Došlo k chybě při odesílání formuláře. Prosím zkuste to znovu.')
+    }
+  }
+
   return (
     <div className={cn(s.container, contactIsOpen && s.open)}>
       <div className={s.overlay} onClick={closeContactTab} />
@@ -68,59 +84,7 @@ export function ContactForm({ data }) {
         ) : (
           <ScrollableBox className={s.scrollable} shadow={false}>
             <div className={s.content}>{globalRenderer(data.description)}</div>
-            <Hubspot {...data.form} className={s.form}>
-              {({ ...helpers }) => (
-                <Hubspot.Form className={s.form} {...helpers} />
-              )}
-            </Hubspot>
-            <div className={s.accordion}>
-              <p className="p text-uppercase text-bold text-muted">FAQ</p>
-              <Accordion.Root
-                type="single"
-                className={s['accordion-root']}
-                collapsible
-              >
-                {data.faqsCollection.items.map((faq, i) => (
-                  <Accordion.Item
-                    value={slugify(faq.title)}
-                    key={i}
-                    className={s.item}
-                  >
-                    <Accordion.Header>
-                      <Accordion.Trigger className={s.trigger}>
-                        <p className="p text-bold text-uppercase">
-                          {faq.title}
-                        </p>
-                        <svg
-                          className={s.icon}
-                          viewBox="0 0 26 26"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11 1H1V11" stroke="#00FF6A" />
-                          <path d="M15 1H25V11" stroke="#00FF6A" />
-                          <path d="M15 25L25 25L25 15" stroke="#00FF6A" />
-                          <path d="M11 25L1 25L1 15" stroke="#00FF6A" />
-                          <g className={s.x}>
-                            <path
-                              d="M8.75684 8.75745L17.2421 17.2427"
-                              stroke="#00FF6A"
-                            />
-                            <path
-                              d="M17.2422 8.75745L8.75691 17.2427"
-                              stroke="#00FF6A"
-                            />
-                          </g>
-                        </svg>
-                      </Accordion.Trigger>
-                    </Accordion.Header>
-                    <Accordion.Content className={s['accordion-content']}>
-                      {renderer(faq.content)}
-                    </Accordion.Content>
-                  </Accordion.Item>
-                ))}
-              </Accordion.Root>
-            </div>
+            <SimpleContactForm onSubmit={handleSubmit} className={s.form} />
           </ScrollableBox>
         )}
       </div>

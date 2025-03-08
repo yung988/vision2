@@ -1,4 +1,4 @@
-# Studio Freight Website
+# Studio Vision Website
 
 ## Setup
 

@@ -1,0 +1,28 @@
+{
+  "name": "Asset",
+  "description": "An asset with images",
+  "displayField": "name",
+  "fields": [
+    {
+      "id": "name",
+      "name": "Name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": []
+    },
+    {
+      "id": "imagesCollection",
+      "name": "Images Collection",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "items": {
+        "type": "Link",
+        "validations": [],
+        "linkType": "Asset"
+      }
+    }
+  ]
+}

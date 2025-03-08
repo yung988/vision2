@@ -6,6 +6,7 @@ import Slider from 'components/slider'
 import { renderer } from 'contentful/renderer'
 import { slugify } from 'lib/slugify'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { useState } from 'react'
 import s from './project-accordion.module.scss'
 
@@ -57,15 +58,27 @@ export const ProjectAccordion = ({ data }) => {
             </Accordion.Header>
             <Accordion.Content className={s['accordion-content']}>
               <Slider enableAutoplay={!!active} className={s.slides}>
-                {item.assetsCollection.items.map((asset, i) => (
-                  <ComposableImage
-                    sources={asset.imagesCollection}
-                    key={i}
-                    width={343}
-                    height={211}
-                    small
-                  />
-                ))}
+                {item.localImages && item.localImages.length > 0
+                  ? item.localImages.map((imagePath, i) => (
+                      <div className={s.image} key={i}>
+                        <Image
+                          src={imagePath}
+                          alt={`${item.name} - obrázek ${i + 1}`}
+                          width={343}
+                          height={211}
+                          style={{ objectFit: 'cover' }}
+                        />
+                      </div>
+                    ))
+                  : item.assetsCollection?.items?.map((asset, i) => (
+                      <ComposableImage
+                        sources={asset.imagesCollection}
+                        key={i}
+                        width={343}
+                        height={211}
+                        small
+                      />
+                    ))}
               </Slider>
               {item?.link && (
                 <Link href={item?.link} className={cn('p-s', s.external)}>

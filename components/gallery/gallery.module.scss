@@ -5,7 +5,8 @@
   height: 100%;
   padding: desktop-vh(110px) desktop-vw(201px);
   display: flex;
-  transition: opacity 500ms var(--ease-out-expo),
+  transition:
+    opacity 500ms var(--ease-out-expo),
     transform 500ms var(--ease-out-expo);
 
   &::before {
@@ -39,5 +40,20 @@
     opacity: 0;
     pointer-events: none;
     transform: translateY(2%);
+  }
+}
+
+.noAssets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-light);
+  border-radius: desktop-vw(8px);
+  height: desktop-vw(600px);
+  width: 100%;
+  margin-bottom: desktop-vw(8px);
+
+  p {
+    color: var(--grey);
   }
 }

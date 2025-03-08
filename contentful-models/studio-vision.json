@@ -1,0 +1,51 @@
+{
+  "name": "Studio Vision",
+  "description": "Main information about Studio Vision",
+  "displayField": "email",
+  "fields": [
+    {
+      "id": "principles",
+      "name": "Principles",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "items": {
+        "type": "Symbol",
+        "validations": []
+      }
+    },
+    {
+      "id": "about",
+      "name": "About",
+      "type": "RichText",
+      "localized": false,
+      "required": false,
+      "validations": []
+    },
+    {
+      "id": "phoneNumber",
+      "name": "Phone Number",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": []
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "regexp": {
+            "pattern": "^\\w[\\w.-]*@([\\w-]+\\.)+[\\w-]+$",
+            "flags": ""
+          },
+          "message": "Please enter a valid email address"
+        }
+      ]
+    }
+  ]
+}
