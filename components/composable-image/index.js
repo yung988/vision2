@@ -9,7 +9,7 @@ export function ComposableImage({
   large = false,
   small = false,
   priority = false,
-  objectFit = 'cover',
+  objectFit = 'contain',
 }) {
   // Upravíme šířku a výšku pro lepší zobrazení
   const adjustedWidth = width

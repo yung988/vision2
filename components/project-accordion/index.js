@@ -67,7 +67,7 @@ export const ProjectAccordion = ({ data }) => {
                           width={343}
                           height={211}
                           style={{
-                            objectFit: 'cover',
+                            objectFit: 'contain',
                             backgroundColor: '#000',
                           }}
                         />
@@ -80,7 +80,7 @@ export const ProjectAccordion = ({ data }) => {
                         width={343}
                         height={211}
                         small
-                        objectFit="cover"
+                        objectFit="contain"
                       />
                     ))}
               </Slider>

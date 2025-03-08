@@ -16,7 +16,7 @@ const VisionLogoMobile = dynamic(() => import('icons/vision-logo-mobile.svg'), {
   ssr: false,
 })
 const Star = dynamic(() => import('icons/stard.svg'), { ssr: false })
-const VisionMonogram = dynamic(() => import('icons/sf-monogram.svg'), {
+const VisionMonogram = dynamic(() => import('icons/vision-monogram.svg'), {
   ssr: false,
 })
 const StarDuotone = dynamic(() => import('icons/star-duotone.svg'), {
