@@ -12,7 +12,7 @@
 
   .image {
     grid-column: span 1;
-    width: auto;
+    width: 100%;
     border-radius: mobile-vw(8px);
     overflow: hidden;
     position: relative;
@@ -53,10 +53,11 @@
         max-height: 80vh;
         width: auto !important;
         height: auto !important;
+        max-width: 100%;
       }
     }
     &:not(:only-child) {
-      aspect-ratio: var(--width) / var(--height);
+      aspect-ratio: 16 / 9;
       height: mobile-vw(238px);
 
       @include desktop {

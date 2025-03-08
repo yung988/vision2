@@ -11,7 +11,10 @@ export function ComposableImage({
   priority = false,
   objectFit = 'cover',
 }) {
-  const amount = sources.items.length
+  // Upravíme šířku a výšku pro lepší zobrazení
+  const adjustedWidth = width
+  const adjustedHeight = height
+
   return (
     <div className={s.images}>
       {sources.items.map((source) =>
@@ -39,16 +42,12 @@ export function ComposableImage({
             key={source.url}
             src={source.url}
             alt={source.title}
-            width={width / amount}
-            height={height}
+            width={adjustedWidth}
+            height={adjustedHeight}
             className={cn(s.image, large && s.large, small && s.small)}
             style={{
-              '--height': height,
-              '--width': width / amount,
               objectFit: objectFit,
               backgroundColor: '#000',
-              maxHeight: '100%',
-              maxWidth: '100%',
             }}
             priority={priority}
             quality={95}
