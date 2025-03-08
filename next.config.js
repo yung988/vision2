@@ -145,7 +145,7 @@ const nextConfig = {
       },
       {
         source: '/capabilities',
-        destination: '/StudioFreight-Capabilities.pdf',
+        destination: '/StudioVision-Capabilities.pdf',
         permanent: true,
       },
     ]

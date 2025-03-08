@@ -35,7 +35,7 @@ if (typeof window !== 'undefined') {
 
   window.CREDIT_ME = {
     id: location.hostname,
-    url: 'https://studiofreight.com',
+    url: 'https://studiovision.com',
     credits: [
       {
         name: 'Studio Vision',
