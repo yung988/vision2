@@ -3,7 +3,7 @@
 
 query studioVisionEntryQuery($preview: Boolean!) {
   studioVisionData: studioVision(
-    id: "MvVZP2XQEBTqekLk3C5HH"
+    id: "37boRb32pD8w2VkF8BDSTR"
     preview: $preview
   ) {
     sys {
