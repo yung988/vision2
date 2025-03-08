@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://https://vision2-eight.vercel.app/
+Host: https://vision2-eight.vercel.app/
 
 # Sitemaps
-Sitemap: https://https://vision2-eight.vercel.app//sitemap.xml
+Sitemap: https://vision2-eight.vercel.app/sitemap.xml
