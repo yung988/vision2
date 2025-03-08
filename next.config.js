@@ -30,7 +30,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'assets.http://localhost:3002/',
+        hostname: 'assets.https://vision2-eight.vercel.app/',
       },
     ],
     formats: ['image/avif', 'image/webp'],

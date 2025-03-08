@@ -40,7 +40,7 @@ if (typeof window !== 'undefined') {
       {
         name: 'Studio Vision',
         email: 'hello@studiovision.com',
-        website: 'https://http://localhost:3002/',
+        website: 'https://https://vision2-eight.vercel.app/',
       },
     ],
   }

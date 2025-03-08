@@ -46,7 +46,7 @@ export const Header = ({ principles = [], contact }) => {
           <Link
             name="easter egg - soundboard"
             className={s.egg}
-            href="https://http://localhost:3002/"
+            href="https://https://vision2-eight.vercel.app/"
           >
             <VisionMonogram />
           </Link>
