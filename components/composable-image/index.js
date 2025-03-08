@@ -48,6 +48,7 @@ export function ComposableImage({
             style={{
               objectFit: objectFit,
               backgroundColor: '#000',
+              objectPosition: 'center',
             }}
             priority={priority}
             quality={95}
