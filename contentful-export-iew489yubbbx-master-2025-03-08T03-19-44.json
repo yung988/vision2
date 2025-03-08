@@ -1,0 +1,3223 @@
+{
+  "tags": [
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "37boRb32pD8w2VkF8BDSTR",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:00.775Z",
+        "updatedAt": "2025-03-08T00:51:01.268Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:01.268Z",
+        "firstPublishedAt": "2025-03-08T00:51:01.268Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "studioVision"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/37boRb32pD8w2VkF8BDSTR"
+      },
+      "fields": {
+        "principles": {
+          "en-US": [
+            "Creative Excellence",
+            "User-Centered Design",
+            "Technical Innovation",
+            "Strategic Thinking",
+            "Collaborative Approach"
+          ]
+        },
+        "about": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Studio Vision je kreativní studio zaměřené na tvorbu webových a mobilních aplikací.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "phoneNumber": {
+          "en-US": "+420 123 456 789"
+        },
+        "email": {
+          "en-US": "hello@studiovision.com"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "2I3rMuX5vrF6Vys56XX7sV",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:01.699Z",
+        "updatedAt": "2025-03-08T00:51:01.969Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:01.969Z",
+        "firstPublishedAt": "2025-03-08T00:51:01.969Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/2I3rMuX5vrF6Vys56XX7sV"
+      },
+      "fields": {
+        "text": {
+          "en-US": "Instagram"
+        },
+        "url": {
+          "en-US": "https://instagram.com/studiovision"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "7UeLhN2L7rBzYBdHdPgp4",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:02.405Z",
+        "updatedAt": "2025-03-08T00:51:02.672Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:02.672Z",
+        "firstPublishedAt": "2025-03-08T00:51:02.672Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/7UeLhN2L7rBzYBdHdPgp4"
+      },
+      "fields": {
+        "text": {
+          "en-US": "Twitter"
+        },
+        "url": {
+          "en-US": "https://twitter.com/studiovision"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "35mqUERW6ORN6aogNq6rmu",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:02.988Z",
+        "updatedAt": "2025-03-08T00:51:03.255Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:03.255Z",
+        "firstPublishedAt": "2025-03-08T00:51:03.255Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/35mqUERW6ORN6aogNq6rmu"
+      },
+      "fields": {
+        "text": {
+          "en-US": "LinkedIn"
+        },
+        "url": {
+          "en-US": "https://linkedin.com/company/studiovision"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "1HkvFdSxtZocLF1V89Txy3",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:03.593Z",
+        "updatedAt": "2025-03-08T00:51:03.886Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:03.886Z",
+        "firstPublishedAt": "2025-03-08T00:51:03.886Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/1HkvFdSxtZocLF1V89Txy3"
+      },
+      "fields": {
+        "text": {
+          "en-US": "GitHub"
+        },
+        "url": {
+          "en-US": "https://github.com/studiovision"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "4xCsYZRfCkpTB85gbny0Cz",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:04.514Z",
+        "updatedAt": "2025-03-08T00:51:04.783Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:04.783Z",
+        "firstPublishedAt": "2025-03-08T00:51:04.783Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/4xCsYZRfCkpTB85gbny0Cz"
+      },
+      "fields": {
+        "text": {
+          "en-US": "Dribbble"
+        },
+        "url": {
+          "en-US": "https://dribbble.com/studiovision"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "1DOEhcd05XrrMXDqqcST2Q",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:05.112Z",
+        "updatedAt": "2025-03-08T00:51:05.373Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:05.373Z",
+        "firstPublishedAt": "2025-03-08T00:51:05.373Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/1DOEhcd05XrrMXDqqcST2Q"
+      },
+      "fields": {
+        "text": {
+          "en-US": "Behance"
+        },
+        "url": {
+          "en-US": "https://behance.net/studiovision"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "6ACr7DHC1BY7UNOysHjTdo",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:05.806Z",
+        "updatedAt": "2025-03-08T00:51:06.070Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:06.070Z",
+        "firstPublishedAt": "2025-03-08T00:51:06.070Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "footer"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/6ACr7DHC1BY7UNOysHjTdo"
+      },
+      "fields": {
+        "linksCollection": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2I3rMuX5vrF6Vys56XX7sV"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7UeLhN2L7rBzYBdHdPgp4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "35mqUERW6ORN6aogNq6rmu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1HkvFdSxtZocLF1V89Txy3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4xCsYZRfCkpTB85gbny0Cz"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1DOEhcd05XrrMXDqqcST2Q"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "7nWs0r6bdFGRByxgre0QnT",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:06.427Z",
+        "updatedAt": "2025-03-08T00:51:06.961Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:51:06.961Z",
+        "firstPublishedAt": "2025-03-08T00:51:06.961Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "contact"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/7nWs0r6bdFGRByxgre0QnT"
+      },
+      "fields": {
+        "description": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Kontaktujte nás pro více informací.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "form": {
+          "en-US": "contact-form"
+        },
+        "thankYouMessage": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Děkujeme za váš zájem. Brzy se vám ozveme.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "5VuQq4jN1UZ8ihkWMiNiBX",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:51:08.465Z",
+        "updatedAt": "2025-03-08T01:04:41.968Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-03-08T01:04:41.968Z",
+        "firstPublishedAt": "2025-03-08T00:51:08.724Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "projectList"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/5VuQq4jN1UZ8ihkWMiNiBX"
+      },
+      "fields": {
+        "listCollection": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6OvJ66AG2zVXJxquoxKw5V"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7hUo4R22hkZHsoMN1oC565"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2y8Nn2sOWRzOBqMMlxdkZD"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "yzd7J5L6SNgfPf1nwMZg4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3wcMJWho47M088dbL2dM5R"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3FtgpVX0FRKTARmqAzrezC"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4nINHkwydoeQZGPIliqKzD"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1VwHw6Ou0Lwpu2wfYR2SgW"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6kxXisFEQVovUzZbsptdk1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4LtISuIChqgRnA12QgNJ5X"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3nMq3IN6V4T8CLvC8YZppd"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "uE2wk0srqD10e5eqd5qKu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6etltftSKjsQrrUaqvQGEH"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4BrJRFgkazYWp12uLuxEe3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5ZrQwY5DVzwTZoUWjO2X2u"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5xGteukKHcjrpo8SJwtchz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "6ygUfXx65DWRcy7opyeYU1",
+        "type": "Entry",
+        "createdAt": "2025-03-08T00:56:31.645Z",
+        "updatedAt": "2025-03-08T00:56:31.923Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T00:56:31.923Z",
+        "firstPublishedAt": "2025-03-08T00:56:31.923Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/6ygUfXx65DWRcy7opyeYU1"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Carlo's Finnest"
+        },
+        "industry": {
+          "en-US": "Design"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Carlo's Finnest je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Carlo's Finnest byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "6OvJ66AG2zVXJxquoxKw5V",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:03:43.985Z",
+        "updatedAt": "2025-03-08T01:03:44.388Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:03:44.388Z",
+        "firstPublishedAt": "2025-03-08T01:03:44.388Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/6OvJ66AG2zVXJxquoxKw5V"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Babypool pro Redbull"
+        },
+        "industry": {
+          "en-US": "Fashion"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Babypool pro Redbull je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Babypool pro Redbull byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling",
+            "Production"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Babypool pro Redbull_image_001.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Babypool pro Redbull_image_001.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "7hUo4R22hkZHsoMN1oC565",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:03:47.824Z",
+        "updatedAt": "2025-03-08T01:03:48.250Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:03:48.250Z",
+        "firstPublishedAt": "2025-03-08T01:03:48.250Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/7hUo4R22hkZHsoMN1oC565"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Carlo's Finnest"
+        },
+        "industry": {
+          "en-US": "Fashion"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Carlo's Finnest je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Carlo's Finnest byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Carlo's Finnest_image_002.webp",
+            "/images/Carlo's Finnest_image_003.webp",
+            "/images/Carlo's Finnest_image_004.webp",
+            "/images/Carlo's Finnest_image_005.webp",
+            "/images/Carlo's Finnest_image_006.webp",
+            "/images/Carlo's Finnest_image_007.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Carlo's Finnest_image_002.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "2y8Nn2sOWRzOBqMMlxdkZD",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:03:51.680Z",
+        "updatedAt": "2025-03-08T01:03:51.954Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:03:51.954Z",
+        "firstPublishedAt": "2025-03-08T01:03:51.954Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/2y8Nn2sOWRzOBqMMlxdkZD"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Drinks"
+        },
+        "industry": {
+          "en-US": "Design"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Drinks je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Drinks byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Drinks_image_008.webp",
+            "/images/Drinks_image_009.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Drinks_image_008.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "yzd7J5L6SNgfPf1nwMZg4",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:03:55.380Z",
+        "updatedAt": "2025-03-08T01:03:55.663Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:03:55.663Z",
+        "firstPublishedAt": "2025-03-08T01:03:55.663Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/yzd7J5L6SNgfPf1nwMZg4"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Fausto Fillipa"
+        },
+        "industry": {
+          "en-US": "Photography"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Fausto Fillipa je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Fausto Fillipa byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling",
+            "Production"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Fausto Fillipa_image_010.webp",
+            "/images/Fausto Fillipa_image_011.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Fausto Fillipa_image_010.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "3wcMJWho47M088dbL2dM5R",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:03:59.020Z",
+        "updatedAt": "2025-03-08T01:03:59.286Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:03:59.286Z",
+        "firstPublishedAt": "2025-03-08T01:03:59.286Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/3wcMJWho47M088dbL2dM5R"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Hugo Toxxx-Bday"
+        },
+        "industry": {
+          "en-US": "Film"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Hugo Toxxx-Bday je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Hugo Toxxx-Bday byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling",
+            "Production"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Hugo Toxxx-Bday_image_012.webp",
+            "/images/Hugo Toxxx-Bday_image_013.webp",
+            "/images/Hugo Toxxx-Bday_image_014.webp",
+            "/images/Hugo Toxxx-Bday_image_015.webp",
+            "/images/Hugo Toxxx-Bday_image_016.webp",
+            "/images/Hugo Toxxx-Bday_image_017.webp",
+            "/images/Hugo Toxxx-Bday_image_018.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Hugo Toxxx-Bday_image_012.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "3FtgpVX0FRKTARmqAzrezC",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:02.652Z",
+        "updatedAt": "2025-03-08T01:04:02.919Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:02.919Z",
+        "firstPublishedAt": "2025-03-08T01:04:02.919Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/3FtgpVX0FRKTARmqAzrezC"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Natálie"
+        },
+        "industry": {
+          "en-US": "Art"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Natálie je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Natálie byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling",
+            "Production"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Natálie_image_019.webp",
+            "/images/Natálie_image_020.webp",
+            "/images/Natálie_image_021.webp",
+            "/images/Natálie_image_022.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Natálie_image_019.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "4nINHkwydoeQZGPIliqKzD",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:06.280Z",
+        "updatedAt": "2025-03-08T01:04:06.607Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:06.607Z",
+        "firstPublishedAt": "2025-03-08T01:04:06.607Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/4nINHkwydoeQZGPIliqKzD"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Night Cruisin"
+        },
+        "industry": {
+          "en-US": "Design"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Night Cruisin je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Night Cruisin byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Night Cruisin_image_023.webp",
+            "/images/Night Cruisin_image_024.webp",
+            "/images/Night Cruisin_image_025.webp",
+            "/images/Night Cruisin_image_026.webp",
+            "/images/Night Cruisin_image_027.webp",
+            "/images/Night Cruisin_image_028.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Night Cruisin_image_023.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "1VwHw6Ou0Lwpu2wfYR2SgW",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:09.956Z",
+        "updatedAt": "2025-03-08T01:04:10.235Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:10.235Z",
+        "firstPublishedAt": "2025-03-08T01:04:10.235Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/1VwHw6Ou0Lwpu2wfYR2SgW"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Portrét"
+        },
+        "industry": {
+          "en-US": "Fashion"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Portrét je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Portrét byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Portrét_image_029.webp",
+            "/images/Portrét_image_030.webp",
+            "/images/Portrét_image_031.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Portrét_image_029.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "6kxXisFEQVovUzZbsptdk1",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:14.061Z",
+        "updatedAt": "2025-03-08T01:04:14.360Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:14.360Z",
+        "firstPublishedAt": "2025-03-08T01:04:14.360Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/6kxXisFEQVovUzZbsptdk1"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Prsteny"
+        },
+        "industry": {
+          "en-US": "Film"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Prsteny je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Prsteny byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Prsteny_image_032.webp",
+            "/images/Prsteny_image_033.webp",
+            "/images/Prsteny_image_034.webp",
+            "/images/Prsteny_image_035.webp",
+            "/images/Prsteny_image_036.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Prsteny_image_032.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "4LtISuIChqgRnA12QgNJ5X",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:17.763Z",
+        "updatedAt": "2025-03-08T01:04:18.241Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:18.241Z",
+        "firstPublishedAt": "2025-03-08T01:04:18.241Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/4LtISuIChqgRnA12QgNJ5X"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Sára"
+        },
+        "industry": {
+          "en-US": "Film"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Sára je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Sára byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Sára_image_037.webp",
+            "/images/Sára_image_038.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Sára_image_037.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "3nMq3IN6V4T8CLvC8YZppd",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:21.688Z",
+        "updatedAt": "2025-03-08T01:04:21.963Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:21.963Z",
+        "firstPublishedAt": "2025-03-08T01:04:21.963Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/3nMq3IN6V4T8CLvC8YZppd"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Šperky z kamene"
+        },
+        "industry": {
+          "en-US": "Art"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Šperky z kamene je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Šperky z kamene byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Šperky z kamene_image_078.webp",
+            "/images/Šperky z kamene_image_079.webp",
+            "/images/Šperky z kamene_image_080.webp",
+            "/images/Šperky z kamene_image_081.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Šperky z kamene_image_078.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "uE2wk0srqD10e5eqd5qKu",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:25.381Z",
+        "updatedAt": "2025-03-08T01:04:25.709Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:25.709Z",
+        "firstPublishedAt": "2025-03-08T01:04:25.709Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/uE2wk0srqD10e5eqd5qKu"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Winery"
+        },
+        "industry": {
+          "en-US": "Photography"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Winery je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Winery byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Winery_image_039.webp",
+            "/images/Winery_image_040.webp",
+            "/images/Winery_image_041.webp",
+            "/images/Winery_image_042.webp",
+            "/images/Winery_image_043.webp",
+            "/images/Winery_image_044.webp",
+            "/images/Winery_image_045.webp",
+            "/images/Winery_image_046.webp",
+            "/images/Winery_image_047.webp",
+            "/images/Winery_image_048.webp",
+            "/images/Winery_image_049.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Winery_image_039.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "6etltftSKjsQrrUaqvQGEH",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:29.083Z",
+        "updatedAt": "2025-03-08T01:04:29.356Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:29.356Z",
+        "firstPublishedAt": "2025-03-08T01:04:29.356Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/6etltftSKjsQrrUaqvQGEH"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Yeezuz2020-Bday"
+        },
+        "industry": {
+          "en-US": "Art"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Yeezuz2020-Bday je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Yeezuz2020-Bday byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling",
+            "Production"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Yeezuz2020-Bday_image_050.webp",
+            "/images/Yeezuz2020-Bday_image_051.webp",
+            "/images/Yeezuz2020-Bday_image_052.webp",
+            "/images/Yeezuz2020-Bday_image_053.webp",
+            "/images/Yeezuz2020-Bday_image_054.webp",
+            "/images/Yeezuz2020-Bday_image_055.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Yeezuz2020-Bday_image_050.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "4BrJRFgkazYWp12uLuxEe3",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:32.767Z",
+        "updatedAt": "2025-03-08T01:04:33.289Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:33.289Z",
+        "firstPublishedAt": "2025-03-08T01:04:33.289Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/4BrJRFgkazYWp12uLuxEe3"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Zarážka do dvěří v imaginárním domě France Kafky"
+        },
+        "industry": {
+          "en-US": "Photography"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Zarážka do dvěří v imaginárním domě France Kafky je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Zarážka do dvěří v imaginárním domě France Kafky byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Zarážka do dvěří v imaginárním domě France Kafky_image_056.webp",
+            "/images/Zarážka do dvěří v imaginárním domě France Kafky_image_057.webp",
+            "/images/Zarážka do dvěří v imaginárním domě France Kafky_image_058.webp",
+            "/images/Zarážka do dvěří v imaginárním domě France Kafky_image_059.webp",
+            "/images/Zarážka do dvěří v imaginárním domě France Kafky_image_060.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Zarážka do dvěří v imaginárním domě France Kafky_image_056.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "5ZrQwY5DVzwTZoUWjO2X2u",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:36.756Z",
+        "updatedAt": "2025-03-08T01:04:37.071Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:37.071Z",
+        "firstPublishedAt": "2025-03-08T01:04:37.071Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/5ZrQwY5DVzwTZoUWjO2X2u"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Zdeňka"
+        },
+        "industry": {
+          "en-US": "Film"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Zdeňka je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu Zdeňka byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling",
+            "Production"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/Zdeňka_image_061.webp",
+            "/images/Zdeňka_image_062.webp",
+            "/images/Zdeňka_image_063.webp",
+            "/images/Zdeňka_image_064.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/Zdeňka_image_061.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "iew489yubbbx"
+          }
+        },
+        "id": "5xGteukKHcjrpo8SJwtchz",
+        "type": "Entry",
+        "createdAt": "2025-03-08T01:04:40.494Z",
+        "updatedAt": "2025-03-08T01:04:40.875Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-03-08T01:04:40.875Z",
+        "firstPublishedAt": "2025-03-08T01:04:40.875Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3b9OHlDwW7yNfOKgNpYAYV"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/iew489yubbbx/environments/master/entries/5xGteukKHcjrpo8SJwtchz"
+      },
+      "fields": {
+        "name": {
+          "en-US": "blue night"
+        },
+        "industry": {
+          "en-US": "Music"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "blue night je kreativní projekt zaměřený na vizuální identitu a fotografii.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "testimonial": {
+          "en-US": "\"Spolupráce na projektu blue night byla skvělá. Výsledky předčily naše očekávání.\""
+        },
+        "services": {
+          "en-US": [
+            "Photography",
+            "Design",
+            "Art Direction",
+            "Styling"
+          ]
+        },
+        "stack": {
+          "en-US": [
+            "Canon",
+            "Nikon",
+            "Sony"
+          ]
+        },
+        "localImages": {
+          "en-US": [
+            "/images/blue night_image_065.webp",
+            "/images/blue night_image_066.webp",
+            "/images/blue night_image_067.webp",
+            "/images/blue night_image_068.webp",
+            "/images/blue night_image_069.webp",
+            "/images/blue night_image_070.webp",
+            "/images/blue night_image_071.webp",
+            "/images/blue night_image_072.webp",
+            "/images/blue night_image_073.webp",
+            "/images/blue night_image_074.webp",
+            "/images/blue night_image_075.webp",
+            "/images/blue night_image_076.webp",
+            "/images/blue night_image_077.webp"
+          ]
+        },
+        "mainImage": {
+          "en-US": "/images/blue night_image_065.webp"
+        }
+      }
+    }
+  ],
+  "assets": [
+  ]
+}
