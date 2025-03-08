@@ -54,81 +54,86 @@ async function uploadImages() {
 
     console.log(`Found ${imageFiles.length} images to upload`)
 
-    // Create a new asset entry
-    const assetEntry = await environment.createEntry('asset', {
-      fields: {
-        name: {
-          'en-US': `Images for ${project.fields.name?.['en-US'] || 'Project'}`,
-        },
-        imagesCollection: {
-          'en-US': [],
-        },
-      },
-    })
-
-    console.log(`Created asset entry with ID: ${assetEntry.sys.id}`)
-
-    // Upload each image and add it to the asset's imagesCollection
-    const imagesCollection = []
+    // Upload each image as a Contentful asset
+    const uploadedAssetLinks = []
 
     for (const imageFile of imageFiles) {
       const filePath = path.join(IMAGES_DIR, imageFile)
       const fileBuffer = fs.readFileSync(filePath)
       const contentType = mime.lookup(filePath) || 'application/octet-stream'
+      const fileName = path.basename(imageFile)
 
       console.log(`Uploading ${imageFile}...`)
 
-      // Upload the file to Contentful
-      const uploadedAsset = await environment.createAsset({
-        fields: {
-          title: {
-            'en-US': path.basename(imageFile, path.extname(imageFile)),
-          },
-          description: {
-            'en-US': `Image for ${project.fields.name?.['en-US'] || 'Project'}`,
-          },
-          file: {
-            'en-US': {
-              contentType,
-              fileName: imageFile,
-              upload: `data:${contentType};base64,${fileBuffer.toString(
-                'base64',
-              )}`,
+      try {
+        // Create the asset
+        let asset = await environment.createAssetFromFiles({
+          fields: {
+            title: {
+              'en-US': path.basename(imageFile, path.extname(imageFile)),
+            },
+            description: {
+              'en-US': `Image for ${
+                project.fields.name?.['en-US'] || 'Project'
+              }`,
+            },
+            file: {
+              'en-US': {
+                contentType,
+                fileName,
+                file: fileBuffer,
+              },
             },
           },
-        },
-      })
+        })
 
-      // Process and publish the asset
-      const processedAsset = await uploadedAsset.processForAllLocales()
-      const publishedAsset = await processedAsset.publish()
+        // Process and publish the asset
+        asset = await asset.processForAllLocales()
+        asset = await asset.publish()
 
-      console.log(`Published asset: ${publishedAsset.sys.id}`)
+        console.log(`Published asset: ${asset.sys.id}`)
 
-      // Add the asset to the imagesCollection
-      imagesCollection.push({
-        sys: {
-          type: 'Link',
-          linkType: 'Asset',
-          id: publishedAsset.sys.id,
-        },
-      })
+        // Add the asset to the collection
+        uploadedAssetLinks.push({
+          sys: {
+            type: 'Link',
+            linkType: 'Asset',
+            id: asset.sys.id,
+          },
+        })
+      } catch (error) {
+        console.error(`Error uploading ${imageFile}:`, error.message)
+      }
     }
 
-    // Update the asset entry with the imagesCollection
-    assetEntry.fields.imagesCollection['en-US'] = imagesCollection
-    const updatedAssetEntry = await assetEntry.update()
-    const publishedAssetEntry = await updatedAssetEntry.publish()
+    if (uploadedAssetLinks.length === 0) {
+      console.error('No images were successfully uploaded')
+      process.exit(1)
+    }
 
-    console.log(`Published asset entry: ${publishedAssetEntry.sys.id}`)
+    // Create an asset entry to hold the images
+    console.log('Creating asset entry...')
+    let assetEntry = await environment.createEntry('asset', {
+      fields: {
+        imagesCollection: {
+          'en-US': uploadedAssetLinks,
+        },
+      },
+    })
 
-    // Update the project with the new asset
+    // Publish the asset entry
+    assetEntry = await assetEntry.publish()
+    console.log(`Published asset entry with ID: ${assetEntry.sys.id}`)
+
+    // Update the project with the new asset entry
     const assetsCollection = project.fields.assetsCollection?.['en-US'] || []
+
+    // Add the asset entry to the project's assetsCollection
     assetsCollection.push({
       sys: {
         type: 'Link',
         linkType: 'Entry',
-        id: publishedAssetEntry.sys.id,
+        id: assetEntry.sys.id,
       },
     })
 
@@ -136,10 +141,11 @@ async function uploadImages() {
       'en-US': assetsCollection,
     }
 
-    const updatedProject = await project.update()
-    const publishedProject = await updatedProject.publish()
+    // Update and publish the project
+    let updatedProject = await project.update()
+    updatedProject = await updatedProject.publish()
 
-    console.log(`Updated and published project: ${publishedProject.sys.id}`)
+    console.log(`Updated and published project: ${updatedProject.sys.id}`)
     console.log('Images uploaded and associated with the project successfully!')
 
     // Clean up the images directory
