@@ -32,8 +32,8 @@
     "blaze-slider": "1.9.3",
     "clsx": "^2.1.0",
     "contentful-migration": "^4.28.1",
-    "cross-env": "^7.0.3",
     "critters": "^0.0.20",
+    "cross-env": "^7.0.3",
     "eslint": "8.56.0",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
@@ -55,7 +55,7 @@
     "react-use-measure": "^2.1.1",
     "sass": "^1.69.7",
     "throttle-debounce": "5.0.0",
-    "webpack": "^5.89.0",
+    "webpack": "^5.98.0",
     "zustand": "4.4.7"
   },
   "devDependencies": {
